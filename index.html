@@ -9,23 +9,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        $(document).ready(()=>{
+            var move = 1;
+            var turn = true;
+            $("#dashboard tr td").click(()=>{
+                console.log("cliquei");
+            })
+        })
+    </script>
     <h1 class="Titulo">Jogo da Velha</h1>
     <hr>
 <table id="dashboard">
     <tr class="row">
-       <td id="c00">0</td>
-       <td id="c01">1</td>
-       <td id="c02">2</td>
+        <td id="c00"></td>
+        <td id="c01"></td>
+        <td id="c02"></td>
     </tr>
     <tr class="row">
-        <td id="c10">3</td>
-        <td id="c11">4</td>
-        <td id="c12">5</td>
+        <td id="c10"></td>
+        <td id="c11"></td>
+        <td id="c12"></td>
     </tr>
     <tr class="row">
-        <td id="c20">6</td>
-        <td id="c21">7</td>
-        <td id="c22">8</td>
+        <td id="c20"></td>
+        <td id="c21"></td>
+        <td id="c22"></td>
     </tr>
 </table>
 
