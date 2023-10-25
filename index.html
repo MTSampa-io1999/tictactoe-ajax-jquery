@@ -13,8 +13,18 @@
         $(document).ready(()=>{
             var move = 1;
             var turn = true;
-            $("#dashboard tr td").click(()=>{
-                console.log("cliquei");
+            $("#dashboard tr td").click((e)=>{
+                console.log($("#" + e.target.id).text());
+                if($("#" + e.target.id).text() =="" && turn){
+                    if(move % 2 == 1){
+                        $("#" + e.target.id).html("X")
+                    } else {
+                        $("#" + e.target.id).html("O")
+                    }
+                    move++;
+                } else {
+                    alert("Jogada Inválida!")
+                }
             })
         })
     </script>

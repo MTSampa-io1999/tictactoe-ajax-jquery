@@ -6,6 +6,8 @@
 .Titulo{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: normal;
+    text-align: center;
+    margin: 0.3%;
 }
 
 table{
